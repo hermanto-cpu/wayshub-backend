@@ -4,11 +4,6 @@ pipeline {
         IMAGE_NAME = "totywan/wayshub-backend13alpine"
     }
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/hermanto-cpu/wayshub-backend.git'
-            }
-        }
         stage('Build Docker Image') {
             steps {
                 script {
