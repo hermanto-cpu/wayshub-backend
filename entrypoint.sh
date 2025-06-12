@@ -14,6 +14,5 @@ echo "✅ MySQL is up - running migrations..."
 npx sequelize db:create --config config/config.js || true
 npx sequelize db:migrate --config config/config.js
 
-# Start the app
 pm2 init
 pm2-runtime ecosystem.config.js
