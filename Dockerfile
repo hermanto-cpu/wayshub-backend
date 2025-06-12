@@ -21,7 +21,7 @@ RUN apk add --no-cache netcat-openbsd
 COPY --from=builder /home/wayshub /home/wayshub
 
 # Install only pm2 (for runtime)
-RUN npm install -g pm2@3.5.1
+# RUN npm install -g pm2@3.5.1
 
 # Copy entrypoint
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
